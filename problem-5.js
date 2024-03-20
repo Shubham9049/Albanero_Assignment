@@ -12,7 +12,8 @@ function KthLargest(nums){
             nums[j + 1] = temp;    //10
         }
     }
-    return nums[nums.length-K]
+    return (nums[nums.length-K],nums)
+
 }
 
 console.log(nums)

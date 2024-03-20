@@ -4,13 +4,16 @@
 
 let nums = [3, 30, 34, 5, 9];
 
-nums.sort((a, b) => {
-  const num1 = a.toString() + b.toString();
-  
-  const num2 = b.toString() + a.toString();
-  return num2-num1
-});
+function largestNum(nums){
+  nums.sort((a, b) => {
+    const num1 = a.toString() + b.toString();
+    
+    const num2 = b.toString() + a.toString();
+    return num2-num1
+  });
+  return result = nums.join("")
+}
 
-const result = nums.join("");
-console.log(result); //
+const data=largestNum(nums);
+console.log(data); //
   
